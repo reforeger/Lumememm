@@ -37,7 +37,7 @@
                         BackgroundColor="Yellow" 
                         FontSize="Medium"
                         Clicked="off_Clicked"
-                        HorizontalOptions="EndAndExpand">
+                        HorizontalOptions="StartAndExpand">
                 </Button>
             </StackLayout>
         </StackLayout>
