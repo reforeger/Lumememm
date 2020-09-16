@@ -9,7 +9,7 @@
                        FontSize="Large">
                 </Label>
             </Frame>
-            
+
             <Frame BackgroundColor="Gray" Padding="80" CornerRadius="140" Margin="110,0">
                 <Label x:Name="medium"
                        FontSize="Large">
@@ -23,15 +23,21 @@
             <StackLayout>
                 <Button x:Name="btn" Text=" Спрятать снеговика" 
                         BackgroundColor="Red"
-                        FontSize="Large"
+                        FontSize="Medium"
                         HorizontalOptions="StartAndExpand"
                         Clicked="on_Clicked">
                 </Button>
                 <Button x:Name="btn2" Text="Отобразить снеговика" 
                         BackgroundColor="Green" 
-                        FontSize="Large"
+                        FontSize="Medium"
                         Clicked="off_Clicked"
                         HorizontalOptions="StartAndExpand">
+                </Button>
+                <Button x:Name="btn3" Text="Random colors" 
+                        BackgroundColor="Yellow" 
+                        FontSize="Medium"
+                        Clicked="off_Clicked"
+                        HorizontalOptions="EndAndExpand">
                 </Button>
             </StackLayout>
         </StackLayout>
