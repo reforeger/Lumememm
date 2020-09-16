@@ -33,8 +33,14 @@
                         Clicked="off_Clicked"
                         HorizontalOptions="StartAndExpand">
                 </Button>
-                <Button x:Name="btn3" Text="Random colors" 
+                <Button x:Name="btn3" Text="Раскрасить случайным цветом" 
                         BackgroundColor="Yellow" 
+                        FontSize="Medium"
+                        Clicked="off_Clicked"
+                        HorizontalOptions="StartAndExpand">
+                </Button>
+                <Button x:Name="btn4" Text="Растопить" 
+                        BackgroundColor="Orange" 
                         FontSize="Medium"
                         Clicked="off_Clicked"
                         HorizontalOptions="StartAndExpand">
