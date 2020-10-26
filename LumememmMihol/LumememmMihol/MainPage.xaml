@@ -1,50 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class = "LumememmMihol.MainPage" >
+             x:Class="LumememmMihol.MainPage">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="Gray" Padding="40" CornerRadius="5" Margin="140,0">
-                <Label x:Name="small"
-                       FontSize="Large">
-                </Label>
+            <Label x:Name="stext"
+                   Text="This is a snowman"
+                   FontSize="Large"
+                   HorizontalOptions="CenterAndExpand">
+            </Label>
+            <Frame x:Name="small"
+                   BackgroundColor="white"
+                   Padding="80"
+                   CornerRadius="90" 
+                   BorderColor="Gray"
+                   VerticalOptions="End"
+                   Margin="120,0">
             </Frame>
-
-            <Frame BackgroundColor="Gray" Padding="80" CornerRadius="140" Margin="110,0">
-                <Label x:Name="medium"
-                       FontSize="Large">
-                </Label>
+            <Frame x:Name="big"
+                   BackgroundColor="white"
+                   Padding="90"
+                   CornerRadius="90" 
+                   BorderColor="Gray"
+                   VerticalOptions="End"
+                   Margin="100,0">
             </Frame>
-            <Frame BackgroundColor="Gray" Padding="110" CornerRadius="140" Margin="70,0">
-                <Label x:Name="large1"
-                       FontSize="Large">
-                </Label>
+            <Frame x:Name="under"
+                   BackgroundColor="Gray"
+                   Padding="45"
+                   Margin="80,0">
             </Frame>
-            <StackLayout>
-                <Button x:Name="btn" Text=" Спрятать снеговика" 
-                        BackgroundColor="Red"
-                        FontSize="Medium"
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="btn" 
+                        Text="Random stand color" 
+                        BackgroundColor="Orange"
                         HorizontalOptions="StartAndExpand"
-                        Clicked="on_Clicked">
-                </Button>
-                <Button x:Name="btn2" Text="Отобразить снеговика" 
-                        BackgroundColor="Green" 
-                        FontSize="Medium"
-                        Clicked="off_Clicked"
-                        HorizontalOptions="StartAndExpand">
-                </Button>
-                <Button x:Name="btn3" Text="Раскрасить случайным цветом" 
-                        BackgroundColor="Yellow" 
-                        FontSize="Medium"
-                        Clicked="off_Clicked"
-                        HorizontalOptions="StartAndExpand">
-                </Button>
-                <Button x:Name="btn4" Text="Растопить" 
-                        BackgroundColor="Orange" 
-                        FontSize="Medium"
-                        Clicked="off_Clicked"
-                        HorizontalOptions="StartAndExpand">
-                </Button>
+                        Clicked="btn_Clicked"
+                        />
+                <Button x:Name="btn1" 
+                        Text="Reset" 
+                        BackgroundColor="DarkGreen"
+                        HorizontalOptions="EndAndExpand"
+                        Clicked="btn1_Clicked"
+                        />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="ran" 
+                        Text="Random snowman color" 
+                        BackgroundColor="Orange"
+                        HorizontalOptions="StartAndExpand"
+                        Clicked="ran_Clicked"
+                        />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="inv" 
+                        Text="Invisible" 
+                        BackgroundColor="LightGray"
+                        HorizontalOptions="Start"
+                        Clicked="inv_Clicked"
+                        />
+                <Button x:Name="vis" 
+                        Text="Visible" 
+                        BackgroundColor="DarkGray"
+                        HorizontalOptions="Start"
+                        Clicked="vis_Clicked"
+                        />
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
