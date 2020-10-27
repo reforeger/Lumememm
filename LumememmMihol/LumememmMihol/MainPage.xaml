@@ -41,7 +41,7 @@
                         Text="Reset" 
                         BackgroundColor="DarkGreen"
                         HorizontalOptions="EndAndExpand"
-                        Clicked="btn1_Clicked"
+                        Clicked="Btn1_Clicked"
                         />
             </StackLayout>
             <StackLayout Orientation="Horizontal">

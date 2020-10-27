@@ -12,25 +12,26 @@ namespace LumememmMihol
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainPage : ContentPage
     {
-        Random random = new Random();
+        readonly Random random1;
         public MainPage()
         {
+            
         }
-        private void btn1_Clicked(object sender, EventArgs e)
+        private void Btn1_Clicked(object sender, EventArgs e)
         {
             stext.Text = "Standart colors";
             small.BackgroundColor = Color.White;
             big.BackgroundColor = Color.White;
             under.BackgroundColor = Color.Gray;
         }
-        private void btn_Clicked(object sender, EventArgs e)
+        private void Btn_Clicked(object sender, EventArgs e)
         {
             stext.Text = "The stand is randomly painted";
-            Color randomColor1 = Color.FromRgb(random.Next(256), random.Next(256), random.Next(256));
+            Color randomColor1 = Color.FromRgb(random1.Next(256), random1.Next(256), random1.Next(256));
             under.BackgroundColor = randomColor1;
         }
 
-        private void inv_Clicked(object sender, EventArgs e)
+        private void Inv_Clicked(object sender, EventArgs e)
         {
             stext.Text = "Snowman is invisble";
             small.Opacity = 0;
@@ -39,7 +40,7 @@ namespace LumememmMihol
             big.BorderColor = Color.White;
         }
 
-        private void vis_Clicked(object sender, EventArgs e)
+        private void Vis_Clicked(object sender, EventArgs e)
         {
             stext.Text = "Snowman is visible";
             small.Opacity = 1;
@@ -48,11 +49,11 @@ namespace LumememmMihol
             big.BorderColor = Color.Gray;
         }
 
-        private void ran_Clicked(object sender, EventArgs e)
+        private void Ran_Clicked(object sender, EventArgs e)
         {
             stext.Text = "The snowman is randomly painted";
-            Color randomColor2 = Color.FromRgb(random.Next(256), random.Next(256), random.Next(256));
-            Color randomColor3 = Color.FromRgb(random.Next(256), random.Next(256), random.Next(256));
+            Color randomColor2 = Color.FromRgb(random1.Next(256), random1.Next(256), random1.Next(256));
+            Color randomColor3 = Color.FromRgb(random1.Next(256), random1.Next(256), random1.Next(256));
             small.BackgroundColor = randomColor2;
             big.BackgroundColor = randomColor3;
         }
